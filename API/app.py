@@ -19,7 +19,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-model = tf.keras.models.load_model(r'C:\Users\bedir\Desktop\Rootics\model\Gradproject.h5', compile=False) ##replace model path with your own
+model = tf.keras.models.load_model(r'C:\Users\bedir\Desktop\Rootics\model\Gradproject.h5', compile=False) #replace model path with your own
 model.compile(loss='sparse_categorical_crossentropy', optimizer='adam')
 
 
