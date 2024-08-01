@@ -81,7 +81,7 @@ async def predict(
 
 
 from pyngrok import ngrok
-ngrok.set_auth_token("2i3Z0gcH6B3GxBK7AumqIdA201Z_BA1fFCgwrRHVrwEw5m48") #replace token with the one you get from ngrok website
+ngrok.set_auth_token("#replace with token you get from ngrok website") 
 PORT = 8000
 import threading
 import uvicorn
@@ -93,5 +93,5 @@ thread = threading.Thread(target=run)
 thread.start()
 
 # تعيين ngrok
-public_url = ngrok.connect(PORT, domain = "gelding-vocal-singularly.ngrok-free.app") #replace domin with the one you get from ngrok website
+public_url = ngrok.connect(PORT, domain = "#replace with domain you get from ngrok website") 
 print(f"Public URL: {public_url}")
